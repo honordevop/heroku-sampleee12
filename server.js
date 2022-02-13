@@ -6,10 +6,10 @@ const path = require('path');
 const app = express();
 
 
-app.use(express.static(__dirname + '/dist/<demo-deploy>'));
+app.use(express.static(__dirname + '/dist/demo-deploy'));
 
 app.get('/*', function (req, res) {
-  res.sendFile('index.html', { root: 'dist/<demo-deploy>/' }
+  res.sendFile('index.html', { root: 'dist/demo-deploy/' }
   );
 });
 
